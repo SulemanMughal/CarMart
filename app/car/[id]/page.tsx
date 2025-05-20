@@ -30,12 +30,12 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
     title: "2012 Nissan Leaf SV",
     price: 15999,
     monthly: 151,
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/assets/img/slider-listing1.jpg?height=600&width=1200",
     images: [
-      "/placeholder.svg?height=120&width=200",
-      "/placeholder.svg?height=120&width=200",
-      "/placeholder.svg?height=120&width=200",
-      "/placeholder.svg?height=120&width=200",
+      "/assets/img/slider-listing1.jpg?height=120&width=200",
+      "/assets/img/slider-listing1.jpg?height=120&width=200",
+      "/assets/img/slider-listing1.jpg?height=120&width=200",
+      "/assets/img/slider-listing1.jpg?height=120&width=200",
     ],
     mileage: 66332,
     year: 2012,
@@ -236,7 +236,7 @@ export default function CarDetailPage({ params }: { params: { id: string } }) {
                       <Link href={`/car/${car.id}/reviews`}>See All Reviews</Link>
                     </Button>
                   </div>
-                  <ReviewList listingId={car.id} />
+                  <ReviewList listingId={Number(car.id)} />
                 </TabsContent>
               </Tabs>
             </div>

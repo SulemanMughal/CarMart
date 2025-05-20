@@ -8,7 +8,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/placeholder.svg?height=600&width=1200')",
+          backgroundImage: "url('/assets/img/slide1.jpg?height=600&width=1200')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(0.7)",
@@ -34,10 +34,10 @@ export function Hero() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button className="bg-white text-gray-900 hover:bg-gray-100">Chat</Button>
+          {/* <Button className="bg-white text-gray-900 hover:bg-gray-100">Chat</Button> */}
           <div className="flex items-center gap-3 bg-black/30 px-4 py-2 rounded-md">
             <Avatar className="h-10 w-10">
-              <AvatarImage src="/placeholder.svg?height=40&width=40" alt="Kathryn Murphy" />
+              <AvatarImage src="/assets/img/slide2.jpg?height=40&width=40" alt="Kathryn Murphy" />
               <AvatarFallback>KM</AvatarFallback>
             </Avatar>
             <div>
